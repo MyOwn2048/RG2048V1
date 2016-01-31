@@ -389,14 +389,30 @@ hr {
 
         // Media queries placed here to avoid carrying over the rest of the logic
         @include smaller($mobile-threshold) {
+          img {
+    max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+} //ABOVE added
           font-size: 0px;
           //ABOVE25px
         }
       } @else if $power >= 1000 {
+        img {
+    max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+} //ABOVE added
         font-size: 0px;
         //ABOVE35
 
         @include smaller($mobile-threshold) {
+          img {
+    max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+} //ABOVE added
+
           font-size: 0px;
           //ABOVE15
         }
@@ -410,6 +426,12 @@ hr {
   &.tile-super .tile-inner {
     color: $bright-text-color;
     background: mix(#333, $tile-gold-color, 95%);
+
+  img {
+    max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+} //ABOVE added
 
     font-size: 0px;
     //ABOVE30
@@ -561,4 +583,3 @@ hr {
     }
   }
 }
-
