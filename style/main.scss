@@ -322,7 +322,8 @@ hr {
     font-weight: bold;
     z-index: 10;
 
-    font-size: 55px;
+    font-size: 0px; 
+    //ABOVE changed from 55px
   }
 
   // Movement transition
@@ -383,17 +384,21 @@ hr {
 
       // Adjust font size for bigger numbers
       @if $power >= 100 and $power < 1000 {
-        font-size: 45px;
+        font-size: 0px;
+        //ABOVE 45px
 
         // Media queries placed here to avoid carrying over the rest of the logic
         @include smaller($mobile-threshold) {
-          font-size: 25px;
+          font-size: 0px;
+          //ABOVE25px
         }
       } @else if $power >= 1000 {
-        font-size: 35px;
+        font-size: 0px;
+        //ABOVE35
 
         @include smaller($mobile-threshold) {
-          font-size: 15px;
+          font-size: 0px;
+          //ABOVE15
         }
       }
     }
@@ -406,10 +411,12 @@ hr {
     color: $bright-text-color;
     background: mix(#333, $tile-gold-color, 95%);
 
-    font-size: 30px;
+    font-size: 0px;
+    //ABOVE30
 
     @include smaller($mobile-threshold) {
-      font-size: 10px;
+      font-size: 0px;
+      //ABOVE10
     }
   }
 }
@@ -476,6 +483,12 @@ hr {
   // Redefine variables for smaller screens
   $field-width: 280px;
   $grid-spacing: 10px;
+
+  img {
+    max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+} //ABOVE added
   $grid-row-cells: 4;
   $tile-size: ($field-width - $grid-spacing * ($grid-row-cells + 1)) / $grid-row-cells;
   $tile-border-radius: 3px;
@@ -531,7 +544,8 @@ hr {
 
   // Rest of the font-size adjustments in the tile class
   .tile .tile-inner {
-    font-size: 35px;
+    font-size: 0px;
+    //ABOVE35
   }
 
   .game-message {
@@ -547,3 +561,4 @@ hr {
     }
   }
 }
+
