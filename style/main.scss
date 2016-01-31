@@ -566,6 +566,11 @@ hr {
 
   // Rest of the font-size adjustments in the tile class
   .tile .tile-inner {
+    img {
+    max-width: 60%;
+    height: auto;
+    width: auto\9; /* ie8 */
+} //ABOVE added
     font-size: 0px;
     //ABOVE35
   }

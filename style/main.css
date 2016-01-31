@@ -231,7 +231,8 @@ hr {
 .tile, .tile .tile-inner {
   width: 107px;
   height: 107px;
-  line-height: 107px; }
+  line-height: 107px; 
+}
 .tile.tile-position-1-1 {
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -594,7 +595,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #BBA1B4;
+    background: #C98CA4;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -759,7 +760,40 @@ hr {
     transform: translate(202px, 202px); }
 
   .tile .tile-inner {
-    font-size: 35px; }
+    font-size: 0px; }
+      .tile.tile-2 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/2.jpg');}
+     .tile.tile-4 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/4.jpg');}
+     .tile.tile-8 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/8.jpg');}
+     .tile.tile-16 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/16.jpg');}
+     .tile.tile-32 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/32.jpg');}
+     .tile.tile-64 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/64.jpg');}
+     .tile.tile-128 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/128.jpg');}
+     .tile.tile-256 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/256.jpg');}
+     .tile.tile-512 .tile-inner {
+  
+    background: url('../tile-sets/RG1/small/512.jpg');}
+     .tile.tile-1024 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/1024.jpg');}
+     .tile.tile-2048 .tile-inner {
+    
+    background: url('../tile-sets/RG1/small/2048.jpg');}
 
   .game-message p {
     font-size: 30px !important;
